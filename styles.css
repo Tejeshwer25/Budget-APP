@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem 2rem;
+}
+
+.app_header {
+    text-align: center;
+    margin: 1rem 0rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+
+/* Styling Input Forms */
+.app_inputs > div {
+    margin: 1rem 0rem;
+}
+
+.app_inputs > div input{
+    padding: 0.1rem;
+    font-size: 1.15rem;
+}
+
+.app_input-budget {
+    display: inline-block;
+    border: 2px solid green;
+    background-color: rgb(249, 255, 249);
+    padding: 1rem;
+    width: fit-content;
+}
+
+.app_input-expense {
+    display: inline-block;
+    border: 2px solid red;
+    background-color: rgb(255, 250, 250);
+    padding: 0.5rem 1rem;
+    width: fit-content;
+}
+
+.app_input-expense > form > div {
+    margin: 0.75rem 0rem;
+}
+
+.app_input-budget label, .app_input-expense label {
+    display: block;
+    padding: 0.25rem 0rem;
+}
+
+/* Result section style */
+.app_result-numbers {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.app_result-numbers > div {
+    margin: 1rem 0.8rem;
+}
+
+.app_result-detail {
+    margin: 2rem 0rem;
+}
+
+.app_result-detail__head, .app_result-detail__body > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.app_result-detail__body {
+    margin: 0.5rem 0rem;
+}
+
+.app_result-detail__body > div {
+    margin: 0.25rem 0rem;
+}
+
+#app_input-expense__btn, .delete_expense {
+    border: 2px solid red;
+    background-color: rgb(255, 250, 250);
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+#app_input-budget__btn, .edit_expense {
+    border: 2px solid green;
+    background-color: rgb(250, 255, 250);
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+@media (min-width: 340px) {
+    .app_input-budget, .app_input-expense {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 600px) {
+    .app_inputs {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .app_input-budget, .app_input-expense {
+        width: fit-content;
+        text-align: left;
+    }
+
+    .app_result-numbers {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .app_result-detail {
+        text-align: center;
+    }
+
+    .app_result-detail__head, .app_result-detail__body > div {
+        grid-template-columns: 2fr 2fr 1fr;
+    }
+}
+
+@media(min-width: 1000px) {
+    .app_input-budget, .app_input-expense {
+        width: 100%;
+        text-align: center;
+    }
+
+    .app > div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .app_inputs {
+        width: 30%;
+    }
+
+    .app_result {
+        width: 50%;
+    }
+
+    .app_inputs {
+        flex-direction: column;
+    }
+
+    .app_result-numbers {
+        justify-content: left;
+        text-align: center;
+    }
+
+    .app_result-detail {
+        text-align: left;
+    }
+}

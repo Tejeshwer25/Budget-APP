@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link type="text/css" rel="stylesheet" href="./styles.css">
+
+        <title>Budget App</title>
+    </head>
+
+    <body>
+        <div class="app">
+            <header class="app_header">
+                <h1>Budget App</h1>
+            </header>
+
+            <div>
+                <section class="app_inputs">
+                    <div class="app_input-budget">
+                        <label for="budget">Please Enter Your Income: </label>
+                        <input type="number" id="budget" /><br />
+                        <button id="app_input-budget__btn">Add Income</button>
+                    </div>
+    
+                    <div class="app_input-expense">
+                        <div>
+                            <label for="expense_name">Please Enter Your Expense: </label>
+                            <input type="text" id="expense_name" />
+                        </div>
+    
+                        <div>
+                            <label for="expense_name">Please Enter Your Expense Amount: </label>
+                            <input type="number" id="expense_amount" />
+                        </div>
+    
+                        <button id="app_input-expense__btn">Add Expense</button>
+                        </form>
+                    </div>
+                </section>
+    
+                <section class="app_result">
+                    <div class="app_result-numbers">
+                        <div class="app_result-numbers__budget">
+                            <h3>Income</h3>
+                            <h2 id="budget_value">00</h2>
+                        </div>
+    
+                        <div class="app_result-numbers__expense">
+                            <h3>Expense</h3>
+                            <h2 id="expense_value">00</h2>
+                        </div>
+    
+                        <div class="app_result-numbers__balance">
+                            <h3>Balance</h3>
+                            <h2 id="balance_value">00</h2>
+                        </div>
+                    </div>
+    
+                    <div class="app_result-detail">
+                        <div class="app_result-detail__head">
+                            <h4>Expense Title</h4>
+                            <h4>Expense Value</h4>
+                        </div>
+                        <div class="app_result-detail__body" id="expense_detail">
+                            
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+        </div>
+
+        <script src="./app.js"></script>
+    </body>
+</html>
